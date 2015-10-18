@@ -13,8 +13,8 @@ test.o : tree.h node.h
 main.o : tree.h
 	$(CXX) $(CXXFLAGS) -c main.cpp 
 
-re :
-	rm main.o test.o && make
+clean :
+	rm *.o *.out
 
 run :
 	rm test.o test.out && make && ./test.out
